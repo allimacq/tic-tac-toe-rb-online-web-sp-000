@@ -181,9 +181,13 @@ def play(board)
   #turn(board)
   until over?(board) == true
     turn(board)
-    break if draw?(board) == true
-    break if over?(board) == false
-    break if over?(board) == false
+    if draw?(board) == true
+      break
+    elsif won?(board) != false
+      break
+    elsif over?(board) == false
+      break
+    end
   end
   
   if won?(board) != false
