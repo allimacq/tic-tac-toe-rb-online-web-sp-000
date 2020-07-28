@@ -185,8 +185,10 @@ def play(board)
       break
     elsif won?(board) != false
       break
-    #elsif over?(board) == false
-     # break
+    elsif over?(board) == true
+      break
+    else
+      break
     end
   end
   
