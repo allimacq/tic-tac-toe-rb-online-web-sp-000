@@ -181,6 +181,7 @@ def play(board)
   #turn(board)
   until over?(board) == true
     turn(board)
+    break if draw?(board) == true
     break if over?(board) == false
   end
   
