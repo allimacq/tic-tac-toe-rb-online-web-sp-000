@@ -183,6 +183,7 @@ def play(board)
     turn(board)
     break if draw?(board) == true
     break if over?(board) == false
+    break if over?(board) == false
   end
   
   if won?(board) != false
