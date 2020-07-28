@@ -179,13 +179,14 @@ end
 #this play method works in irb
 def play(board)
   #turn(board)
+  i = 0
   until over?(board) == true
     turn(board)
     if draw?(board) == true
       break
     elsif won?(board) != false
       break
-    else
+    elsif i == 9
       break
     end
   end
